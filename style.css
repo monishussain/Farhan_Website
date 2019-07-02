@@ -1,0 +1,41 @@
+header{
+    color: #ffffff;
+    display: flex;
+    height: 112px;
+    align-items: center;
+}
+header a.logo{
+    float: left;
+    overflow: hidden;
+}
+nav {
+    float: right;
+}
+nav ul li{
+    padding-left: 30px;
+}
+nav ul li a{
+    color: #ffffff;
+    transition: all 0.3s ease-in;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #e74c3c;
+}
+.services{
+    text-align: center;
+}
+.services p i {
+    font-size: 32px;
+    color: #555555;
+}
+.services-heading,.portfolio-heading{
+    margin-bottom: 40px;
+}
+.portfolio{
+    text-align: center;
+    background-color: #e5a744;
+}
+.white{
+    color: #ffffff;
+}
