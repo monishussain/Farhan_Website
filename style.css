@@ -29,8 +29,14 @@ nav ul li a:hover{
     font-size: 32px;
     color: #555555;
 }
+.services-content{
+    padding-bottom: 25px;
+}
 .services-heading,.portfolio-heading{
     margin-bottom: 40px;
+}
+.portfolio-heading{
+    padding-top: 40px;
 }
 .portfolio{
     text-align: center;
@@ -38,4 +44,50 @@ nav ul li a:hover{
 }
 .white{
     color: #ffffff;
+}
+.portfoliocarousel .inner-content{
+        position: relative;
+        top:0;
+        right: 0;
+        background: rgba(0,0,0,0.8);
+}
+.portfoliocarousel .inner-content img{
+    width: 100%;
+}
+.portfoliocarousel .overlay-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 103%;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    transition: all 0.3s ease-in;
+}
+.portfoliocarousel .inner-content:hover .overlay-content{
+    bottom: 0;
+}
+.portfoliocarousel .overlay-content h2,.portfoliocarousel .overlay-content p{
+    color: #ffffff;
+    padding-top: 40px;
+}
+.portfoliocarousel .overlay-content p a{
+    color: #2d82d8;
+    text-decoration: none;
+}
+
+.owl-carousel .owl-nav button{
+    outline: none;
+
+}
+.owl-carousel .owl-nav button.owl-prev{
+
+    color: #ffffff;
+    font-size: 20px;
+
+}
+.owl-carousel .owl-nav button.owl-next{
+
+    color: #ffffff;
+    font-size: 20px;
+
 }
