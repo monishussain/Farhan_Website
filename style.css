@@ -40,10 +40,21 @@ nav ul li a:hover{
 }
 .portfolio{
     text-align: center;
-    background-color: #e5a744;
+    /*background-color: #e5a744;*/
+    background: url("img/slides/slide2.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
 }
 .white{
     color: #ffffff;
+}
+.overlay-portfolio{
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
 }
 .portfoliocarousel .inner-content{
         position: relative;
@@ -52,7 +63,7 @@ nav ul li a:hover{
         background: rgba(0,0,0,0.8);
 }
 .portfoliocarousel .inner-content img{
-    width: 100%;
+        width: 100%;
 }
 .portfoliocarousel .overlay-content{
     position: absolute;
@@ -90,4 +101,42 @@ nav ul li a:hover{
     color: #ffffff;
     font-size: 20px;
 
+}
+
+.team-heading{
+    padding-top: 40px;
+}
+.team{
+    text-align: center;
+    background-color: #e5a744;
+}
+
+.teamcarousel .inner-content{
+    position: relative;
+    top:0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+}
+.teamcarousel .inner-content img{
+    width: 100%;
+}
+.teamcarousel .overlay-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 103%;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    transition: all 0.3s ease-in;
+}
+.teamcarousel .inner-content:hover .overlay-content{
+    bottom: 0;
+}
+.teamcarousel .overlay-content h2,.teamcarousel .overlay-content p{
+    color: #ffffff;
+    padding-top: 40px;
+}
+.teamcarousel .overlay-content p a{
+    color: #2d82d8;
+    text-decoration: none;
 }
