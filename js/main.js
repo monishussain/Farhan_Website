@@ -20,7 +20,26 @@ $(document).ready(function(){
     $('.scroll-top').click(function () {
         $('html,body').animate({scrollTop:0},"slow")
     })
-
+    $(window).scroll(function () {
+        var scrollval=$(this).scrollTop();
+        if(scrollval>100){
+            $('.secondary-dark-blue-bg').css({
+                'position':'fixed',
+                'left':'0',
+                'right':'0',
+                'top':'0',
+                'z-index':'1000'
+            })
+        }else {
+            $('.secondary-dark-blue-bg').css({
+                'position':'relative',
+                'left':'0',
+                'right':'0',
+                'top':'0',
+                'z-index':'1000'
+            })
+        }
+    })
     $('.services-title ul li a').click(function () {
         var tab_id=$(this).attr('data-tab')
         console.log(tab_id);

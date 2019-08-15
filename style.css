@@ -164,7 +164,10 @@ nav ul li a:hover{
 #footer{
     background: #2e276d;
     padding: 20px 0;
-
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 #footer p{
     color: #ffffff;
