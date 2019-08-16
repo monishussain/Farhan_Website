@@ -24,6 +24,7 @@ nav ul li a:hover{
 }
 .services{
     text-align: center;
+    margin-top: 25px;
 }
 .services p i {
     font-size: 32px;
@@ -40,21 +41,10 @@ nav ul li a:hover{
 }
 .portfolio{
     text-align: center;
-    /*background-color: #e5a744;*/
-    background: url("img/slides/slide2.jpg");
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    position: relative;
+    background-color: #e5a744;
 }
 .white{
     color: #ffffff;
-}
-.overlay-portfolio{
-    background: rgba(0,0,0,0.6);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-
 }
 .portfoliocarousel .inner-content{
         position: relative;
@@ -63,7 +53,7 @@ nav ul li a:hover{
         background: rgba(0,0,0,0.8);
 }
 .portfoliocarousel .inner-content img{
-        width: 100%;
+    width: 100%;
 }
 .portfoliocarousel .overlay-content{
     position: absolute;
@@ -102,41 +92,277 @@ nav ul li a:hover{
     font-size: 20px;
 
 }
-
-.team-heading{
-    padding-top: 40px;
-}
-.team{
-    text-align: center;
-    background-color: #e5a744;
-}
-
-.teamcarousel .inner-content{
+#home-info{
+    background: url("img/slides/slide2.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
     position: relative;
-    top:0;
-    right: 0;
-    background: rgba(0,0,0,0.8);
+    min-height: 200px;
 }
-.teamcarousel .inner-content img{
-    width: 100%;
+#home-info>h3{
+    color: #ffffff !important;
 }
-.teamcarousel .overlay-content{
+.overlay-content{
+    color: #ffffff;
+}
+.welcome-head:before{
+    content: "";
     position: absolute;
+    background: #fbad1a;
+    width: 50px;
+    height: 5px;
+    top: 41px;
+    left: 22px;
+}
+.welcome-para{
+    text-align: justify;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    line-height: 27px;
+    margin-top: 50px;
+}
+#welcome-section ul li span{
+    color: #000000;
+    font-weight: 600;
+}
+#welcome-section ul li{
+    line-height: 27px;
+    font-size: 14px;
+}
+#welcome-section ul li i{
+    font-size: 13px;
+    color: #252525;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.clients-carousel{
+    margin-top: 20px;
+}
+#clients{
+    padding: 30px;
+    background: #f2f2f2;
+}
+.client-head:before{
+    content: "";
+    position: absolute;
+    background: #fbad1a;
+    width: 50px;
+    height: 5px;
+    top: 41px;
+    left: 22px;
+}
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-    bottom: 103%;
+    background: rgba(0,0,0,0.7);
+}
+#footer{
+    background: #2e276d;
+    padding: 20px 0;
+    position: absolute;
     right: 0;
-    background: rgba(0,0,0,0.8);
+    bottom: 0;
+    left: 0;
+}
+#footer p{
+    color: #ffffff;
+    font-size: 14px;
+}
+.scroll-top{
+    position: fixed;
+    width: 50px;
+    height: 40px;
+    background: #34495e;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 1000;
+    opacity: 0;
+}
+.scroll-top i{
+    color: #ffffff;
+}
+.bx-wrapper .bx-pager{
+    bottom: 15px;
+}
+/*ABOUT SECTION*/
+#about{
+    background: url("img/pages-header.jpg") no-repeat;
+    background-size: cover;
+    min-height: 220px;
+}
+#about h2{
+    margin: 0 auto;
+    line-height: 220px;
+    text-align: center;
+}
+
+.about-head{
+    margin: 40px 0;
+}
+.about-head:before{
+    content: "";
+    position: absolute;
+    background: #fbad1a;
+    width: 50px;
+    height: 5px;
+    top: 80px;
+    left: 14%;
+}
+#about-content p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: justify;
+}
+#about-info{
+    background: url("img/about-bg.jpg") no-repeat center top;
+    min-height: 250px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin-bottom: 0;
+}
+.about_info-inner-content{
+    padding: 60px 0;
+}
+.about_info-inner-content h3{
+    color: #ffffff;
+}
+.about_info-inner-content p{
+    color: #ffffff;
+}
+
+#services-content{
+    padding: 50px 0;
+}
+.services-title{
+
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.services-title ul li{
+    background-color: #eeeeee;
+    display: block;
+    margin-bottom: 15px;
+}
+.services-title a{
+    text-decoration: none;
+    color: #1b1e21;
+    padding: 22px 82px;
+    display: block;
+    line-height: 17px;
+    font-weight: 400;
+    border-left: 2px solid transparent;
+    transition: .2s all;
+}
+.services-title a:hover{
+    background: #2e276d;
+    color: #ffffff;
+    border-left:4px solid #fbad1a;
+}
+.tabbings{
+    display: none;
+}
+.active-tab{
+    display: block;
+}
+.active-link{
+    background: #2e276d;
+    color: #ffffff !important;
+    border-left:4px solid #fbad1a !important;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: -18px;
+    right: 0px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #06D85F;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    padding: 20px;
+}
+.pop-up-head{
+    background-color: #0b2e13;
+    padding: 20px;
+}
+#responsiveTabsDemo ul{
+    text-align: center;
+    margin-top: 1rem;
+}
+#responsiveTabsDemo ul li{
+
+}
+#responsiveTabsDemo ul li:first-child{
+    padding-right: 10px;
+}
+#responsiveTabsDemo ul li a{
+    color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    min-width: 200px;
+    background-color: #2e276d;
+    text-decoration: none;
     transition: all 0.3s ease-in;
 }
-.teamcarousel .inner-content:hover .overlay-content{
-    bottom: 0;
+#responsiveTabsDemo ul li a:hover{
+    background-color: #0c5460;
 }
-.teamcarousel .overlay-content h2,.teamcarousel .overlay-content p{
-    color: #ffffff;
-    padding-top: 40px;
+#responsiveTabsDemo .tab{
+    display: none;
 }
-.teamcarousel .overlay-content p a{
-    color: #2d82d8;
-    text-decoration: none;
+#responsiveTabsDemo .tab.active{
+    display: block;
+}
+#responsiveTabsDemo li.active a{
+    background-color: #0c5460;
+}
+@media screen and (max-width: 700px){
+
+    .popup{
+        width: 70%;
+    }
 }
